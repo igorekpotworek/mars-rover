@@ -23,7 +23,6 @@ class RoverControllerSpec extends Specification {
         roverAfterSecondMove == "(5, 3) SOUTH"
     }
 
-
     def "should throw if wrong command"() {
         given:
         def marsRover = new RoverController(4, 2, EAST)

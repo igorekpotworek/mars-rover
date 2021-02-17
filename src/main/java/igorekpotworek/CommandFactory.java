@@ -13,7 +13,7 @@ class CommandFactory {
           .put('L', Rover::rotateLeft)
           .put('R', Rover::rotateRight);
 
-  public static RoverCommand create(char command) {
+  static RoverCommand create(char command) {
     return COMMANDS
         .get(command)
         .getOrElseThrow(

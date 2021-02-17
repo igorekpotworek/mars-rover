@@ -19,6 +19,5 @@ class VectorTest extends Specification {
         1      | Vector.vector(5, 6)
         2      | Vector.vector(10, 12)
         -1     | Vector.vector(-5, -6)
-
     }
 }
