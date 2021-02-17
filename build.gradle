@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+
+
+group 'igorekpotworek'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'io.vavr', name: 'vavr', version: '0.10.3'
+
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+
+    testCompileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+    testCompile group: 'org.spockframework', name: 'spock-core', version: '1.3-groovy-2.5'
+}
+
